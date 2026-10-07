@@ -1,584 +1,959 @@
 <!doctype html>
 <html lang="es-AR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Junta Electoral · Elecciones 2026 · IEM “Dr. Arturo Oñativia”</title>
-  <meta name="description" content="Junta Electoral del Instituto de Educación Media “Dr. Arturo Oñativia” (UNSa). Elección de representantes de Padres o Tutores y del Estamento de Alumnos ante el Consejo Asesor. Acto eleccionario: 26 de octubre de 2026.">
-  <meta name="theme-color" content="#258543">
-  <meta property="og:title" content="Elecciones 2026 · Junta Electoral IEM">
-  <meta property="og:description" content="Cronograma, requisitos y documentos de la elección de representantes ante el Consejo Asesor. Acto eleccionario: lunes 26 de octubre de 2026.">
-  <meta property="og:image" content="assets/img/logo-iem.png">
-  <link rel="icon" type="image/png" href="assets/img/logo-iem.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Junta Electoral · Elecciones 2026 · IEM “Dr. Arturo Oñativia”</title>
+    <meta
+      name="description"
+      content="Junta Electoral del Instituto de Educación Media “Dr. Arturo Oñativia” (UNSa). Elección de representantes de Padres o Tutores y del Estamento de Alumnos ante el Consejo Asesor. Acto eleccionario: 26 de octubre de 2026."
+    />
+    <meta name="theme-color" content="#258543" />
+    <meta property="og:title" content="Elecciones 2026 · Junta Electoral IEM" />
+    <meta
+      property="og:description"
+      content="Cronograma, requisitos y documentos de la elección de representantes ante el Consejo Asesor. Acto eleccionario: lunes 26 de octubre de 2026."
+    />
+    <meta property="og:image" content="assets/img/logo-iem.png" />
+    <link rel="icon" type="image/png" href="assets/img/logo-iem.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
 
-  <div class="ribbon">
-    <div class="wrap">Universidad Nacional de Salta</div>
-  </div>
-
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#inicio" aria-label="Inicio">
-        <img src="assets/img/logo-iem.png" alt="" width="40" height="52">
-        <span class="brand-text">
-          <span class="brand-title">Junta Electoral</span>
-          <span class="brand-sub">Instituto de Educación Media “Dr. Arturo Oñativia”</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
-        <span class="sr-only">Abrir menú</span>
-        <span class="bars" aria-hidden="true"></span>
-      </button>
-      <nav id="nav" class="nav" aria-label="Secciones">
-        <a href="#cronograma">Cronograma</a>
-        <a href="#que-se-elige">Qué se elige</a>
-        <a href="#quien-vota">Quién vota</a>
-        <a href="#padrones">Padrones</a>
-        <a href="#listas">Listas</a>
-        <a href="#junta">La Junta</a>
-        <a href="#documentos">Documentos</a>
-      </nav>
+    <div class="ribbon">
+      <div class="wrap">Universidad Nacional de Salta</div>
     </div>
-  </header>
 
-  <main id="contenido">
-
-    <!-- PORTADA -->
-    <section id="inicio" class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Elecciones 2026 · Consejo Asesor</p>
-          <h1>Elección de representantes de Padres o Tutores y del Estamento de Alumnos</h1>
-          <p class="lead">
-            La Junta Electoral convoca a la comunidad del Instituto de Educación Media
-            “Dr. Arturo Oñativia” a elegir a sus representantes ante el Consejo Asesor,
-            conforme a la Resolución R Nº 863/26 y a la Resolución Nº 001/2026 de esta Junta.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#cronograma">Ver cronograma</a>
-            <a class="btn btn-ghost" href="#documentos">Documentos oficiales</a>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-labelledby="acto-titulo">
-          <p class="card-kicker" id="acto-titulo">Acto eleccionario</p>
-          <p class="big-date">
-            <span class="big-day">26</span>
-            <span class="big-rest">
-              <span>de octubre</span>
-              <span>lunes · 2026</span>
-            </span>
-          </p>
-          <p class="countdown" id="countdown" hidden></p>
-          <hr>
-          <div class="now" id="etapa-actual">
-            <p class="card-kicker">Etapa en curso</p>
-            <p class="now-title" id="etapa-titulo">Recepción de listas y avales</p>
-            <p class="now-date" id="etapa-fecha">Hasta las 18:00 hs. del viernes 9 de octubre, por Mesa de Entradas del IEM.</p>
-          </div>
-        </aside>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#inicio" aria-label="Inicio">
+          <img src="assets/img/logo-iem.png" alt="" width="40" height="52" />
+          <span class="brand-text">
+            <span class="brand-title">Junta Electoral</span>
+            <span class="brand-sub"
+              >Instituto de Educación Media “Dr. Arturo Oñativia”</span
+            >
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span class="sr-only">Abrir menú</span>
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+        <nav id="nav" class="nav" aria-label="Secciones">
+          <a href="#cronograma">Cronograma</a>
+          <a href="#que-se-elige">Qué se elige</a>
+          <a href="#quien-vota">Quién vota</a>
+          <a href="#padrones">Padrones</a>
+          <a href="#listas">Listas</a>
+          <a href="#junta">La Junta</a>
+          <a href="#documentos">Documentos</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <!-- VIDEO -->
-    <section id="video" class="section section-alt">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Junta Electoral</p>
-          <h2>Elecciones 2026 en video</h2>
-        </header>
+    <main id="contenido">
+      <!-- PORTADA -->
+      <section id="inicio" class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Elecciones 2026 · Consejo Asesor</p>
+            <h1>
+              Elección de representantes de Padres o Tutores y del Estamento de
+              Alumnos
+            </h1>
+            <p class="lead">
+              La Junta Electoral convoca a la comunidad del Instituto de
+              Educación Media “Dr. Arturo Oñativia” a elegir a sus
+              representantes ante el Consejo Asesor, conforme a la Resolución R
+              Nº 863/26 y a la Resolución Nº 001/2026 de esta Junta.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#cronograma">Ver cronograma</a>
+              <a class="btn btn-ghost" href="#documentos"
+                >Documentos oficiales</a
+              >
+            </div>
+          </div>
 
-        <div class="video-frame">
-          <video id="video-je" src="assets/video/je-elecciones-iem.mp4"
-                 autoplay muted loop playsinline controls preload="auto"
-                 controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture
-                 aria-label="Video de la Junta Electoral sobre las elecciones 2026 del IEM">
-            Tu navegador no puede reproducir este video.
-          </video>
+          <aside class="hero-card" aria-labelledby="acto-titulo">
+            <p class="card-kicker" id="acto-titulo">Acto eleccionario</p>
+            <p class="big-date">
+              <span class="big-day">26</span>
+              <span class="big-rest">
+                <span>de octubre</span>
+                <span>lunes · 2026</span>
+              </span>
+            </p>
+            <p class="countdown" id="countdown" hidden></p>
+            <hr />
+            <div class="now" id="etapa-actual">
+              <p class="card-kicker">Etapa en curso</p>
+              <p class="now-title" id="etapa-titulo">
+                Recepción de listas y avales
+              </p>
+              <p class="now-date" id="etapa-fecha">
+                Hasta las 18:00 hs. del viernes 9 de octubre, por Mesa de
+                Entradas del IEM.
+              </p>
+            </div>
+          </aside>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CRONOGRAMA -->
-    <section id="cronograma" class="section">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Artículo 1º · Resolución Nº 001/2026 – JE</p>
-          <h2>Cronograma electoral</h2>
-          <p>Fechas importantes y fijadas por la Junta Electoral.</p>
-        </header>
-
-        <ol class="timeline" id="timeline">
-          <li data-start="2026-09-07T00:00" data-end="2026-09-17T23:59" data-kind="deadline">
-            <span class="step">1</span>
-            <div class="t-body">
-              <h3>Confección de padrones provisorios</h3>
-              <p>De alumnos y de la representación de Padres o Tutores.</p>
-            </div>
-            <p class="t-date">Hasta el jue 17/09</p>
-          </li>
-          <li data-start="2026-09-18T00:00" data-end="2026-09-24T23:59" data-kind="range">
-            <span class="step">2</span>
-            <div class="t-body">
-              <h3>Publicidad de padrones provisorios</h3>
-              <p>Período de tachas e inclusiones.</p>
-            </div>
-            <p class="t-date">Del 18 al 24/09</p>
-          </li>
-          <li data-start="2026-09-25T00:00" data-end="2026-09-25T23:59" data-kind="day">
-            <span class="step">3</span>
-            <div class="t-body">
-              <h3>Padrones definitivos</h3>
-              <p>Emisión y publicación de los padrones definitivos del claustro de Alumnos y de la representación de Padres.</p>
-            </div>
-            <p class="t-date">Vie 25/09</p>
-          </li>
-          <li data-start="2026-09-26T00:00" data-end="2026-10-09T18:00" data-kind="deadline">
-            <span class="step">4</span>
-            <div class="t-body">
-              <h3>Recepción de listas y avales</h3>
-              <p>Por Mesa de Entradas del IEM.</p>
-            </div>
-            <p class="t-date">Hasta las 18:00 hs. del vie 09/10</p>
-          </li>
-          <li data-start="2026-10-13T00:00" data-end="2026-10-13T23:59" data-kind="day">
-            <span class="step">5</span>
-            <div class="t-body">
-              <h3>Oficialización de listas</h3>
-              <p>La Junta Electoral oficializa las listas presentadas.</p>
-            </div>
-            <p class="t-date">Mar 13/10</p>
-          </li>
-          <li data-start="2026-10-14T00:00" data-end="2026-10-23T00:00" data-kind="deadline">
-            <span class="step">6</span>
-            <div class="t-body">
-              <h3>Cierre de campaña electoral</h3>
-              <p>A partir de ese momento no se admiten actividades de campaña.</p>
-            </div>
-            <p class="t-date">00:00 hs. del vie 23/10</p>
-          </li>
-          <li class="is-key" data-start="2026-10-26T00:00" data-end="2026-10-26T23:59" data-kind="day">
-            <span class="step">7</span>
-            <div class="t-body">
-              <h3>Acto eleccionario</h3>
-              <p>Votación de representantes de Padres o Tutores y del Estamento de Alumnos.</p>
-            </div>
-            <p class="t-date">Lun 26/10</p>
-          </li>
-          <li data-start="2026-10-27T00:00" data-end="2026-10-29T18:00" data-kind="deadline">
-            <span class="step">8</span>
-            <div class="t-body">
-              <h3>Impugnación al acto eleccionario</h3>
-              <p>Plazo para presentar impugnaciones ante la Junta Electoral.</p>
-            </div>
-            <p class="t-date">Hasta las 18:00 hs. del jue 29/10</p>
-          </li>
-          <li data-start="2026-10-30T00:00" data-end="2026-10-30T23:59" data-kind="day">
-            <span class="step">9</span>
-            <div class="t-body">
-              <h3>Expedición de la Junta y proclamación</h3>
-              <p>La Junta Electoral se expide y proclama a los candidatos electos.</p>
-            </div>
-            <p class="t-date">Vie 30/10</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- QUÉ SE ELIGE -->
-    <section id="que-se-elige" class="section section-alt">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Arts. 8, 17, 18 y 19 · Res. CS Nº 500/11</p>
-          <h2>Qué se elige</h2>
-          <p>
-            El Consejo Asesor acompaña a la Dirección en la conducción del Instituto. Lo integran ocho
-            representantes de los distintos estamentos. En esta elección se renuevan <strong>tres de esas bancas</strong>.
-          </p>
-        </header>
-
-        <div class="council" role="img" aria-label="Composición del Consejo Asesor: 4 bancas de Profesores y 1 de Auxiliares, que no se eligen ahora; 1 banca de Padres o Tutores y 2 de Alumnos, que se eligen en esta convocatoria.">
-          <div class="seat-group">
-            <div class="seats"><span class="seat"></span><span class="seat"></span><span class="seat"></span><span class="seat"></span></div>
-            <p>Profesores <span>4</span></p>
-          </div>
-          <div class="seat-group">
-            <div class="seats"><span class="seat"></span></div>
-            <p>Auxiliares <span>1</span></p>
-          </div>
-          <div class="seat-group is-elected">
-            <div class="seats"><span class="seat"></span></div>
-            <p>Padres o Tutores <span>1</span></p>
-          </div>
-          <div class="seat-group is-elected">
-            <div class="seats"><span class="seat"></span><span class="seat"></span></div>
-            <p>Alumnos <span>2</span></p>
-          </div>
-        </div>
-        <p class="legend"><span class="key key-on"></span> Se elige en esta convocatoria <span class="key"></span> No se elige ahora</p>
-
-        <div class="facts">
-          <div class="fact">
-            <p class="fact-n">1 año</p>
-            <p>de mandato para los representantes de Padres o Tutores y de Alumnos. Pueden ser reelectos por única vez.</p>
-          </div>
-          <div class="fact">
-            <p class="fact-n">Titular + suplente</p>
-            <p>Cada lista incluye igual número de suplentes que de titulares. El suplente asume ante la ausencia del titular.</p>
-          </div>
-          <div class="fact">
-            <p class="fact-n">Mayoría</p>
-            <p>La representación se adjudica a la lista que obtenga el mayor número de votos válidos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUIÉN VOTA -->
-    <section id="quien-vota" class="section">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Arts. 14, 15, 21 y 22 · Res. CS Nº 500/11</p>
-          <h2>Quién vota y quién puede ser candidato</h2>
-          <p>El voto es <strong>secreto y obligatorio</strong> para todas las personas que figuran en el padrón.</p>
-        </header>
-
-        <div class="cards">
-          <article class="card">
-            <p class="card-tag">Estamento de Alumnos</p>
-            <h3>Estudiantes</h3>
-            <dl>
-              <dt>Votan</dt>
-              <dd>Los alumnos de <strong>2º a 6º año</strong> que figuran en el padrón definitivo.</dd>
-              <dt>Pueden ser candidatos</dt>
-              <dd>Sólo los alumnos de los tres últimos cursos: <strong>4º, 5º y 6º año</strong>.</dd>
-              <dt>Se eligen</dt>
-              <dd>2 representantes titulares y 2 suplentes.</dd>
-            </dl>
-          </article>
-          <article class="card">
-            <p class="card-tag">Representación de Padres o Tutores</p>
-            <h3>Familias</h3>
-            <dl>
-              <dt>Votan</dt>
-              <dd>El padre, la madre o el tutor de cada alumno, <strong>uno por alumno</strong>. Integran el padrón sin necesidad de inscribirse.</dd>
-              <dt>Pueden ser candidatos</dt>
-              <dd>Quienes integran el padrón de Padres o Tutores.</dd>
-              <dt>Se eligen</dt>
-              <dd>1 representante titular y 1 suplente.</dd>
-            </dl>
-          </article>
-        </div>
-
-        <div class="notice">
-          <h3>Padrones</h3>
-          <p>
-            Los padrones definitivos se publicaron el viernes 25 de septiembre. Son confeccionados por la Dirección,
-            aprobados por la Junta Electoral y pueden ser consultados por toda la comunidad del IEM.
-            El período de tachas e inclusiones se cerró el 24 de septiembre.
-          </p>
-          <p><a href="#padrones">Consultá los padrones definitivos</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PADRONES -->
-    <section id="padrones" class="section section-alt">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Etapa 3 del cronograma · Viernes 25 de septiembre</p>
-          <h2>Padrones definitivos</h2>
-          <p>
-            Consultá si figurás en el padrón.
-          </p>
-        </header>
-
-        <noscript>
-          <p class="notice">Para consultar los padrones hace falta tener JavaScript activado en el navegador.</p>
-        </noscript>
-
-        <!-- Alumnos -->
-        <article class="padron" aria-labelledby="padron-alumnos">
-          <header class="padron-head">
-            <div>
-              <p class="card-tag">Estamento de Alumnos</p>
-              <h3 id="padron-alumnos">Padrón de alumnos</h3>
-            </div>
-            <p class="padron-count" data-total="alumnos"></p>
+      <!-- VIDEO -->
+      <section id="video" class="section section-alt">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Junta Electoral</p>
+            <h2>Elecciones 2026 en video</h2>
           </header>
 
-          <div class="padron-grid">
-            <form class="lookup" id="buscar-alumno" novalidate>
-              <label for="dni-alumno">DNI del alumno o la alumna</label>
-              <div class="lookup-row">
-                <input id="dni-alumno" name="dni" type="text" inputmode="numeric" autocomplete="off"
-                       maxlength="12" placeholder="Ej.: 50123456" aria-describedby="dni-alumno-ayuda">
-                <button class="btn btn-primary" type="submit">Consultar</button>
+          <div class="video-frame">
+            <video
+              id="video-je"
+              src="assets/video/je-elecciones-iem.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+              preload="auto"
+              controlslist="nodownload noplaybackrate noremoteplayback"
+              disablepictureinpicture
+              aria-label="Video de la Junta Electoral sobre las elecciones 2026 del IEM"
+            >
+              Tu navegador no puede reproducir este video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- CRONOGRAMA -->
+      <section id="cronograma" class="section">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Artículo 1º · Resolución Nº 001/2026 – JE</p>
+            <h2>Cronograma electoral</h2>
+            <p>Fechas importantes y fijadas por la Junta Electoral.</p>
+          </header>
+
+          <ol class="timeline" id="timeline">
+            <li
+              data-start="2026-09-07T00:00"
+              data-end="2026-09-17T23:59"
+              data-kind="deadline"
+            >
+              <span class="step">1</span>
+              <div class="t-body">
+                <h3>Confección de padrones provisorios</h3>
+                <p>De alumnos y de la representación de Padres o Tutores.</p>
               </div>
-              <p class="hint" id="dni-alumno-ayuda">Completo, con o sin puntos.</p>
-              <div id="resultado-alumno" aria-live="polite"></div>
+              <p class="t-date">Hasta el jue 17/09</p>
+            </li>
+            <li
+              data-start="2026-09-18T00:00"
+              data-end="2026-09-24T23:59"
+              data-kind="range"
+            >
+              <span class="step">2</span>
+              <div class="t-body">
+                <h3>Publicidad de padrones provisorios</h3>
+                <p>Período de tachas e inclusiones.</p>
+              </div>
+              <p class="t-date">Del 18 al 24/09</p>
+            </li>
+            <li
+              data-start="2026-09-25T00:00"
+              data-end="2026-09-25T23:59"
+              data-kind="day"
+            >
+              <span class="step">3</span>
+              <div class="t-body">
+                <h3>Padrones definitivos</h3>
+                <p>
+                  Emisión y publicación de los padrones definitivos del claustro
+                  de Alumnos y de la representación de Padres.
+                </p>
+              </div>
+              <p class="t-date">Vie 25/09</p>
+            </li>
+            <li
+              data-start="2026-09-26T00:00"
+              data-end="2026-10-09T18:00"
+              data-kind="deadline"
+            >
+              <span class="step">4</span>
+              <div class="t-body">
+                <h3>Recepción de listas y avales</h3>
+                <p>Por Mesa de Entradas del IEM.</p>
+              </div>
+              <p class="t-date">Hasta las 18:00 hs. del vie 09/10</p>
+            </li>
+            <li
+              data-start="2026-10-13T00:00"
+              data-end="2026-10-13T23:59"
+              data-kind="day"
+            >
+              <span class="step">5</span>
+              <div class="t-body">
+                <h3>Oficialización de listas</h3>
+                <p>La Junta Electoral oficializa las listas presentadas.</p>
+              </div>
+              <p class="t-date">Mar 13/10</p>
+            </li>
+            <li
+              data-start="2026-10-14T00:00"
+              data-end="2026-10-23T00:00"
+              data-kind="deadline"
+            >
+              <span class="step">6</span>
+              <div class="t-body">
+                <h3>Cierre de campaña electoral</h3>
+                <p>
+                  A partir de ese momento no se admiten actividades de campaña.
+                </p>
+              </div>
+              <p class="t-date">00:00 hs. del vie 23/10</p>
+            </li>
+            <li
+              class="is-key"
+              data-start="2026-10-26T00:00"
+              data-end="2026-10-26T23:59"
+              data-kind="day"
+            >
+              <span class="step">7</span>
+              <div class="t-body">
+                <h3>Acto eleccionario</h3>
+                <p>
+                  Votación de representantes de Padres o Tutores y del Estamento
+                  de Alumnos.
+                </p>
+              </div>
+              <p class="t-date">Lun 26/10</p>
+            </li>
+            <li
+              data-start="2026-10-27T00:00"
+              data-end="2026-10-29T18:00"
+              data-kind="deadline"
+            >
+              <span class="step">8</span>
+              <div class="t-body">
+                <h3>Impugnación al acto eleccionario</h3>
+                <p>
+                  Plazo para presentar impugnaciones ante la Junta Electoral.
+                </p>
+              </div>
+              <p class="t-date">Hasta las 18:00 hs. del jue 29/10</p>
+            </li>
+            <li
+              data-start="2026-10-30T00:00"
+              data-end="2026-10-30T23:59"
+              data-kind="day"
+            >
+              <span class="step">9</span>
+              <div class="t-body">
+                <h3>Expedición de la Junta y proclamación</h3>
+                <p>
+                  La Junta Electoral se expide y proclama a los candidatos
+                  electos.
+                </p>
+              </div>
+              <p class="t-date">Vie 30/10</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- QUÉ SE ELIGE -->
+      <section id="que-se-elige" class="section section-alt">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Arts. 8, 17, 18 y 19 · Res. CS Nº 500/11</p>
+            <h2>Qué se elige</h2>
+            <p>
+              El Consejo Asesor acompaña a la Dirección en la conducción del
+              Instituto. Lo integran ocho representantes de los distintos
+              estamentos. En esta elección se renuevan
+              <strong>tres de esas bancas</strong>.
+            </p>
+          </header>
+
+          <div
+            class="council"
+            role="img"
+            aria-label="Composición del Consejo Asesor: 4 bancas de Profesores y 1 de Auxiliares, que no se eligen ahora; 1 banca de Padres o Tutores y 2 de Alumnos, que se eligen en esta convocatoria."
+          >
+            <div class="seat-group">
+              <div class="seats">
+                <span class="seat"></span><span class="seat"></span
+                ><span class="seat"></span><span class="seat"></span>
+              </div>
+              <p>Profesores <span>4</span></p>
+            </div>
+            <div class="seat-group">
+              <div class="seats"><span class="seat"></span></div>
+              <p>Auxiliares <span>1</span></p>
+            </div>
+            <div class="seat-group is-elected">
+              <div class="seats"><span class="seat"></span></div>
+              <p>Padres o Tutores <span>1</span></p>
+            </div>
+            <div class="seat-group is-elected">
+              <div class="seats">
+                <span class="seat"></span><span class="seat"></span>
+              </div>
+              <p>Alumnos <span>2</span></p>
+            </div>
+          </div>
+          <p class="legend">
+            <span class="key key-on"></span> Se elige en esta convocatoria
+            <span class="key"></span> No se elige ahora
+          </p>
+
+          <div class="facts">
+            <div class="fact">
+              <p class="fact-n">1 año</p>
+              <p>
+                de mandato para los representantes de Padres o Tutores y de
+                Alumnos. Pueden ser reelectos por única vez.
+              </p>
+            </div>
+            <div class="fact">
+              <p class="fact-n">Titular + suplente</p>
+              <p>
+                Cada lista incluye igual número de suplentes que de titulares.
+                El suplente asume ante la ausencia del titular.
+              </p>
+            </div>
+            <div class="fact">
+              <p class="fact-n">Mayoría</p>
+              <p>
+                La representación se adjudica a la lista que obtenga el mayor
+                número de votos válidos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUIÉN VOTA -->
+      <section id="quien-vota" class="section">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Arts. 14, 15, 21 y 22 · Res. CS Nº 500/11</p>
+            <h2>Quién vota y quién puede ser candidato</h2>
+            <p>
+              El voto es <strong>secreto y obligatorio</strong> para todas las
+              personas que figuran en el padrón.
+            </p>
+          </header>
+
+          <div class="cards">
+            <article class="card">
+              <p class="card-tag">Estamento de Alumnos</p>
+              <h3>Estudiantes</h3>
+              <dl>
+                <dt>Votan</dt>
+                <dd>
+                  Los alumnos de <strong>2º a 6º año</strong> que figuran en el
+                  padrón definitivo.
+                </dd>
+                <dt>Pueden ser candidatos</dt>
+                <dd>
+                  Sólo los alumnos de los tres últimos cursos:
+                  <strong>4º, 5º y 6º año</strong>.
+                </dd>
+                <dt>Se eligen</dt>
+                <dd>2 representantes titulares y 2 suplentes.</dd>
+              </dl>
+            </article>
+            <article class="card">
+              <p class="card-tag">Representación de Padres o Tutores</p>
+              <h3>Familias</h3>
+              <dl>
+                <dt>Votan</dt>
+                <dd>
+                  El padre, la madre o el tutor de cada alumno,
+                  <strong>uno por alumno</strong>. Integran el padrón sin
+                  necesidad de inscribirse.
+                </dd>
+                <dt>Pueden ser candidatos</dt>
+                <dd>Quienes integran el padrón de Padres o Tutores.</dd>
+                <dt>Se eligen</dt>
+                <dd>1 representante titular y 1 suplente.</dd>
+              </dl>
+            </article>
+          </div>
+
+          <div class="notice">
+            <h3>Padrones</h3>
+            <p>
+              Los padrones definitivos se publicaron el viernes 25 de
+              septiembre. Son confeccionados por la Dirección, aprobados por la
+              Junta Electoral y pueden ser consultados por toda la comunidad del
+              IEM. El período de tachas e inclusiones se cerró el 24 de
+              septiembre.
+            </p>
+            <p><a href="#padrones">Consultá los padrones definitivos</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PADRONES -->
+      <section id="padrones" class="section section-alt">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">
+              Etapa 3 del cronograma · Viernes 25 de septiembre
+            </p>
+            <h2>Padrones definitivos</h2>
+            <p>Consultá si figurás en el padrón.</p>
+          </header>
+
+          <noscript>
+            <p class="notice">
+              Para consultar los padrones hace falta tener JavaScript activado
+              en el navegador.
+            </p>
+          </noscript>
+
+          <!-- Alumnos -->
+          <article class="padron" aria-labelledby="padron-alumnos">
+            <header class="padron-head">
+              <div>
+                <p class="card-tag">Estamento de Alumnos</p>
+                <h3 id="padron-alumnos">Padrón de alumnos</h3>
+              </div>
+              <p class="padron-count" data-total="alumnos"></p>
+            </header>
+
+            <div class="padron-grid">
+              <form class="lookup" id="buscar-alumno" novalidate>
+                <label for="dni-alumno">DNI del alumno o la alumna</label>
+                <div class="lookup-row">
+                  <input
+                    id="dni-alumno"
+                    name="dni"
+                    type="text"
+                    inputmode="numeric"
+                    autocomplete="off"
+                    maxlength="12"
+                    placeholder="Ej.: 50123456"
+                    aria-describedby="dni-alumno-ayuda"
+                  />
+                  <button class="btn btn-primary" type="submit">
+                    Consultar
+                  </button>
+                </div>
+                <p class="hint" id="dni-alumno-ayuda">
+                  Completo, con o sin puntos.
+                </p>
+                <div id="resultado-alumno" aria-live="polite"></div>
+              </form>
+
+              <aside class="privacy" aria-labelledby="privacidad-titulo">
+                <h4 id="privacidad-titulo">Por qué no se muestra la lista</h4>
+                <p>
+                  Para resguardar la identidad y los datos personales de
+                  nuestros estudiantes — Ley 26.061 de Protección Integral de
+                  los Derechos de Niñas, Niños y Adolescentes y Ley 25.326 de
+                  Protección de los Datos Personales — este sitio no publica
+                  nombres ni DNI de alumnos.
+                </p>
+                <p>
+                  La consulta sólo informa curso, número de orden e iniciales a
+                  quien ingresa el DNI completo. La nómina completa puede
+                  consultarse en el IEM.
+                </p>
+              </aside>
+            </div>
+
+            <div class="courses-wrap">
+              <table class="courses" id="alumnos-por-curso" hidden>
+                <caption>
+                  Alumnos empadronados por curso y división
+                </caption>
+              </table>
+            </div>
+            <p class="load-error" data-load-error hidden></p>
+          </article>
+
+          <!-- Padres o Tutores -->
+          <article class="padron" aria-labelledby="padron-padres">
+            <header class="padron-head">
+              <div>
+                <p class="card-tag">Representación de Padres o Tutores</p>
+                <h3 id="padron-padres">Padrón de padres o tutores</h3>
+              </div>
+              <p class="padron-count" data-total="padres"></p>
+            </header>
+
+            <form
+              class="lookup"
+              role="search"
+              aria-label="Buscar en el padrón de padres o tutores"
+            >
+              <label for="q-padre">Apellido, nombre o DNI</label>
+              <div class="lookup-row">
+                <input
+                  id="q-padre"
+                  type="search"
+                  autocomplete="off"
+                  spellcheck="false"
+                  placeholder="Ej.: Gómez María"
+                  aria-describedby="q-padre-ayuda"
+                  aria-controls="tabla-padres"
+                />
+                <button
+                  class="btn btn-ghost"
+                  type="button"
+                  id="ver-padres"
+                  aria-expanded="false"
+                  aria-controls="tabla-padres"
+                >
+                  Ver el padrón completo
+                </button>
+              </div>
+              <p class="hint" id="q-padre-ayuda">
+                Los resultados aparecen mientras escribís. El DNI no se muestra:
+                sólo sirve para buscar y hay que ingresarlo completo.
+              </p>
             </form>
 
-            <aside class="privacy" aria-labelledby="privacidad-titulo">
-              <h4 id="privacidad-titulo">Por qué no se muestra la lista</h4>
-              <p>
-                Para resguardar la identidad y los datos personales de nuestros estudiantes
-                — Ley 26.061 de Protección Integral de los Derechos de Niñas, Niños y Adolescentes y
-                Ley 25.326 de Protección de los Datos Personales — este sitio no publica nombres ni DNI de alumnos.
-              </p>
-              <p>
-                La consulta sólo informa curso, número de orden e iniciales a quien ingresa el DNI completo.
-                La nómina completa puede consultarse en el IEM.
-              </p>
-            </aside>
-          </div>
-
-          <div class="courses-wrap">
-            <table class="courses" id="alumnos-por-curso" hidden>
-              <caption>Alumnos empadronados por curso y división</caption>
-            </table>
-          </div>
-          <p class="load-error" data-load-error hidden></p>
-        </article>
-
-        <!-- Padres o Tutores -->
-        <article class="padron" aria-labelledby="padron-padres">
-          <header class="padron-head">
-            <div>
-              <p class="card-tag">Representación de Padres o Tutores</p>
-              <h3 id="padron-padres">Padrón de padres o tutores</h3>
+            <p class="result-count" id="conteo-padres" aria-live="polite"></p>
+            <div
+              class="people-wrap"
+              id="tabla-padres"
+              tabindex="0"
+              aria-label="Resultados del padrón de padres o tutores"
+              hidden
+            >
+              <table class="people">
+                <thead>
+                  <tr>
+                    <th scope="col" class="num">Nº de orden</th>
+                    <th scope="col">Apellido y nombres</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
             </div>
-            <p class="padron-count" data-total="padres"></p>
+            <p class="load-error" data-load-error hidden></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- LISTAS -->
+      <section id="listas" class="section">
+        <span id="lista" class="section-anchor" aria-hidden="true"></span>
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Etapas 4 y 5 del cronograma</p>
+            <h2>Cómo presentar una lista</h2>
           </header>
 
-          <form class="lookup" role="search" aria-label="Buscar en el padrón de padres o tutores">
-            <label for="q-padre">Apellido, nombre o DNI</label>
-            <div class="lookup-row">
-              <input id="q-padre" type="search" autocomplete="off" spellcheck="false"
-                     placeholder="Ej.: Gómez María" aria-describedby="q-padre-ayuda" aria-controls="tabla-padres">
-              <button class="btn btn-ghost" type="button" id="ver-padres" aria-expanded="false" aria-controls="tabla-padres">Ver el padrón completo</button>
-            </div>
-            <p class="hint" id="q-padre-ayuda">Los resultados aparecen mientras escribís. El DNI no se muestra: sólo sirve para buscar y hay que ingresarlo completo.</p>
-          </form>
+          <ol class="steps">
+            <li>
+              <h3>Armá la lista</h3>
+              <p>
+                Con igual número de titulares y suplentes.
+                <strong>Alumnos:</strong> 2 titulares y 2 suplentes, todos de
+                4º, 5º o 6º año. <strong>Padres o Tutores:</strong> 1 titular y
+                1 suplente.
+              </p>
+            </li>
+            <li>
+              <h3>Reuní los avales</h3>
+              <p>
+                Consultá a la Junta Electoral los requisitos de avales antes de
+                presentar.
+              </p>
+              <a
+                class="step-download-link"
+                href="documentos/Modelo%20de%20nota%20y%20avales.docx"
+                download="Modelo de nota y avales.docx"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Descargar modelo (.docx)
+              </a>
+            </li>
+            <li>
+              <h3>Presentala en Mesa de Entradas</h3>
+              <p>
+                En el IEM,
+                <strong
+                  >hasta las 18:00 hs. del viernes 9 de octubre de 2026</strong
+                >. Fuera de ese plazo no se reciben listas.
+              </p>
+            </li>
+            <li>
+              <h3>Oficialización</h3>
+              <p>
+                El martes 13 de octubre la Junta Electoral oficializa las
+                listas. La campaña cierra a las 00:00 hs. del viernes 23.
+              </p>
+            </li>
+          </ol>
 
-          <p class="result-count" id="conteo-padres" aria-live="polite"></p>
-          <div class="people-wrap" id="tabla-padres" tabindex="0" aria-label="Resultados del padrón de padres o tutores" hidden>
-            <table class="people">
-              <thead>
-                <tr><th scope="col" class="num">Nº de orden</th><th scope="col">Apellido y nombres</th></tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+          <div class="listas-download">
+            <div class="listas-download-main">
+              <div class="listas-download-icon" aria-hidden="true">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  ></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="12" y1="18" x2="12" y2="12"></line>
+                  <polyline points="9 15 12 18 15 15"></polyline>
+                </svg>
+              </div>
+              <div class="listas-download-text">
+                <span
+                  class="eyebrow"
+                  style="margin-bottom: 0.2rem; display: block"
+                  >Documento para presentación de Listas</span
+                >
+                <h3>Modelo de nota y avales</h3>
+                <p>
+                  Modelo para la presentación de la lista y la planilla de
+                  avales, tanto para el estamento de estudiantes, como para el
+                  estamento de padres y/o tutores.
+                </p>
+              </div>
+            </div>
+            <div class="listas-download-action">
+              <a
+                class="btn btn-primary"
+                href="documentos/Modelo%20de%20nota%20y%20avales.docx"
+                download="Modelo de nota y avales.docx"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  style="margin-right: 8px"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Descargar modelo (.docx)
+              </a>
+            </div>
           </div>
-          <p class="load-error" data-load-error hidden></p>
-        </article>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!-- LISTAS -->
-    <section id="listas" class="section">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Etapas 4 y 5 del cronograma</p>
-          <h2>Cómo presentar una lista</h2>
-        </header>
-
-        <ol class="steps">
-          <li>
-            <h3>Armá la lista</h3>
+      <!-- LA JUNTA -->
+      <section id="junta" class="section section-alt">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Art. 23 · Res. CS Nº 500/11</p>
+            <h2>La Junta Electoral</h2>
             <p>
-              Con igual número de titulares y suplentes. <strong>Alumnos:</strong> 2 titulares y 2 suplentes, todos de 4º, 5º o 6º año.
-              <strong>Padres o Tutores:</strong> 1 titular y 1 suplente.
+              Designada por el Artículo 2º de la Resolución R Nº 863/26, la
+              Junta Electoral conduce, controla y resuelve las cuestiones de
+              esta convocatoria. Actúa según la legislación vigente en materia
+              de elecciones —el Régimen Electoral de la UNSa, Res. CS Nº 141/96—
+              y fija el cronograma electoral y sus actos mediante resoluciones
+              fundadas.
             </p>
-          </li>
-          <li>
-            <h3>Reuní los avales</h3>
-            <p>Consultá a la Junta Electoral los requisitos de avales antes de presentar.</p>
-          </li>
-          <li>
-            <h3>Presentala en Mesa de Entradas</h3>
-            <p>En el IEM, <strong>hasta las 18:00 hs. del viernes 9 de octubre de 2026</strong>. Fuera de ese plazo no se reciben listas.</p>
-          </li>
-          <li>
-            <h3>Oficialización</h3>
-            <p>El martes 13 de octubre la Junta Electoral oficializa las listas. La campaña cierra a las 00:00 hs. del viernes 23.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
+            <p>
+              La instancia superior en materia electoral es el
+              <strong
+                >Consejo Superior de la Universidad Nacional de Salta</strong
+              >
+              (Art. 24).
+            </p>
+          </header>
+        </div>
+      </section>
 
-    <!-- LA JUNTA -->
-    <section id="junta" class="section section-alt">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Art. 23 · Res. CS Nº 500/11</p>
-          <h2>La Junta Electoral</h2>
-          <p>
-            Designada por el Artículo 2º de la Resolución R Nº 863/26, la Junta Electoral conduce, controla
-            y resuelve las cuestiones de esta convocatoria. Actúa según la legislación vigente en materia de
-            elecciones —el Régimen Electoral de la UNSa, Res. CS Nº 141/96— y fija el cronograma electoral
-            y sus actos mediante resoluciones fundadas.
-          </p>
-          <p>
-            La instancia superior en materia electoral es el <strong>Consejo Superior de la Universidad Nacional de Salta</strong> (Art. 24).
-          </p>
-        </header>
-      </div>
-    </section>
+      <!-- DOCUMENTOS -->
+      <section id="documentos" class="section">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Marco normativo</p>
+            <h2>Documentos oficiales</h2>
+          </header>
 
-    <!-- DOCUMENTOS -->
-    <section id="documentos" class="section">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Marco normativo</p>
-          <h2>Documentos oficiales</h2>
-        </header>
+          <ul class="docs">
+            <li>
+              <a
+                class="doc"
+                href="documentos/resolucion-je-001-2026.jpeg"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="doc-type">JPG</span>
+                <span class="doc-body">
+                  <span class="doc-title"
+                    >Resolución Nº 001/2026 – Junta Electoral</span
+                  >
+                  <span class="doc-meta"
+                    >Salta, 7 de septiembre de 2026 · Fija el acto eleccionario
+                    y el cronograma</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc"
+                href="documentos/Modelo%20de%20nota%20y%20avales.docx"
+                download="Modelo de nota y avales.docx"
+              >
+                <span class="doc-type">DOCX</span>
+                <span class="doc-body">
+                  <span class="doc-title"
+                    >Modelo de nota y avales</span
+                  >
+                  <span class="doc-meta"
+                    >Formato Word editable (.docx) · Presentación de lista y
+                    firmas de aval</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc"
+                href="documentos/reglamento-iem-res-cs-500-11.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="doc-type">PDF</span>
+                <span class="doc-body">
+                  <span class="doc-title"
+                    >Reglamento de Funcionamiento de los IEM – Res. CS Nº
+                    500/11</span
+                  >
+                  <span class="doc-meta"
+                    >Consejo Superior UNSa, 24 de noviembre de 2011 · 6
+                    páginas</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc"
+                href="documentos/estatuto-unsa-reforma-2023.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="doc-type">PDF</span>
+                <span class="doc-body">
+                  <span class="doc-title"
+                    >Estatuto de la Universidad Nacional de Salta</span
+                  >
+                  <span class="doc-meta"
+                    >Con la reforma parcial de la Res. A.U. Nº 001/2023 · El
+                    Art. 80 prevé el Consejo Asesor · 21 páginas</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <div class="doc doc-ref">
+                <span class="doc-type">REF</span>
+                <span class="doc-body">
+                  <span class="doc-title">Resolución R Nº 863/26</span>
+                  <span class="doc-meta"
+                    >Convoca a elecciones y designa la Junta Electoral</span
+                  >
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="doc doc-ref">
+                <span class="doc-type">REF</span>
+                <span class="doc-body">
+                  <span class="doc-title"
+                    >Régimen Electoral UNSa – Res. CS Nº 141/96</span
+                  >
+                  <span class="doc-meta">De aplicación supletoria</span>
+                </span>
+              </div>
+            </li>
+          </ul>
 
-        <ul class="docs">
-          <li>
-            <a class="doc" href="documentos/resolucion-je-001-2026.jpeg" target="_blank" rel="noopener">
-              <span class="doc-type">JPG</span>
-              <span class="doc-body">
-                <span class="doc-title">Resolución Nº 001/2026 – Junta Electoral</span>
-                <span class="doc-meta">Salta, 7 de septiembre de 2026 · Fija el acto eleccionario y el cronograma</span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="doc" href="documentos/reglamento-iem-res-cs-500-11.pdf" target="_blank" rel="noopener">
-              <span class="doc-type">PDF</span>
-              <span class="doc-body">
-                <span class="doc-title">Reglamento de Funcionamiento de los IEM – Res. CS Nº 500/11</span>
-                <span class="doc-meta">Consejo Superior UNSa, 24 de noviembre de 2011 · 6 páginas</span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="doc" href="documentos/estatuto-unsa-reforma-2023.pdf" target="_blank" rel="noopener">
-              <span class="doc-type">PDF</span>
-              <span class="doc-body">
-                <span class="doc-title">Estatuto de la Universidad Nacional de Salta</span>
-                <span class="doc-meta">Con la reforma parcial de la Res. A.U. Nº 001/2023 · El Art. 80 prevé el Consejo Asesor · 21 páginas</span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <div class="doc doc-ref">
-              <span class="doc-type">REF</span>
-              <span class="doc-body">
-                <span class="doc-title">Resolución R Nº 863/26</span>
-                <span class="doc-meta">Convoca a elecciones y designa la Junta Electoral</span>
-              </span>
+          <details class="transcript">
+            <summary>Leer el texto de la Resolución Nº 001/2026</summary>
+            <div class="transcript-body">
+              <p class="t-center">
+                <strong>RESOLUCIÓN Nº 001/2026 – JUNTA ELECTORAL</strong>
+              </p>
+              <p class="t-right">
+                Salta, 07 de septiembre de 2026<br />Expediente Nº 21.032/06
+              </p>
+              <p>
+                VISTO las presentes actuaciones y, en particular, la Resolución
+                R Nº 863/26 por la cual se convoca a elecciones para elegir a
+                los representantes de Padres o Tutores y del Estamento de
+                Alumnos ante el Consejo Asesor del Instituto de Educación Media
+                “Dr. Arturo Oñativia”, y
+              </p>
+              <p>CONSIDERANDO:</p>
+              <p>
+                Que a través del Artículo 2º de dicho acto administrativo, se
+                designa la Junta Electoral que conducirá, controlará y resolverá
+                cuestiones inherentes a la presente convocatoria, en un todo de
+                acuerdo a lo establecido por el Artículo 23 del Reglamento de
+                funcionamiento del IEM – Resolución CS Nº 500/11.
+              </p>
+              <p>
+                Que en consecuencia, corresponde a la Junta fijar el cronograma
+                electoral correspondiente por el cual se sustanciarán las
+                elecciones.
+              </p>
+              <p>POR ELLO,</p>
+              <p class="t-center">
+                <strong>LA JUNTA ELECTORAL<br />RESUELVE:</strong>
+              </p>
+              <p>
+                ARTÍCULO 1º.- Fijar el
+                <strong>26 de octubre de 2026</strong> como fecha del Acto
+                Eleccionario, a llevarse a cabo con el fin de elegir a los
+                representantes de Padres o Tutores y del Estamento de Alumnos
+                ante el Consejo Asesor del Instituto de Educación Media “Dr.
+                Arturo Oñativia”, de acuerdo al cronograma electoral detallado
+                en esta página.
+              </p>
+              <p>ARTÍCULO 2º.- Dar la más amplia difusión a la presente.</p>
             </div>
-          </li>
-          <li>
-            <div class="doc doc-ref">
-              <span class="doc-type">REF</span>
-              <span class="doc-body">
-                <span class="doc-title">Régimen Electoral UNSa – Res. CS Nº 141/96</span>
-                <span class="doc-meta">De aplicación supletoria</span>
-              </span>
-            </div>
-          </li>
-        </ul>
-
-        <details class="transcript">
-          <summary>Leer el texto de la Resolución Nº 001/2026</summary>
-          <div class="transcript-body">
-            <p class="t-center"><strong>RESOLUCIÓN Nº 001/2026 – JUNTA ELECTORAL</strong></p>
-            <p class="t-right">Salta, 07 de septiembre de 2026<br>Expediente Nº 21.032/06</p>
-            <p>
-              VISTO las presentes actuaciones y, en particular, la Resolución R Nº 863/26 por la cual se convoca a
-              elecciones para elegir a los representantes de Padres o Tutores y del Estamento de Alumnos ante el
-              Consejo Asesor del Instituto de Educación Media “Dr. Arturo Oñativia”, y
-            </p>
-            <p>CONSIDERANDO:</p>
-            <p>
-              Que a través del Artículo 2º de dicho acto administrativo, se designa la Junta Electoral que conducirá,
-              controlará y resolverá cuestiones inherentes a la presente convocatoria, en un todo de acuerdo a lo
-              establecido por el Artículo 23 del Reglamento de funcionamiento del IEM – Resolución CS Nº 500/11.
-            </p>
-            <p>
-              Que en consecuencia, corresponde a la Junta fijar el cronograma electoral correspondiente por el cual
-              se sustanciarán las elecciones.
-            </p>
-            <p>POR ELLO,</p>
-            <p class="t-center"><strong>LA JUNTA ELECTORAL<br>RESUELVE:</strong></p>
-            <p>
-              ARTÍCULO 1º.- Fijar el <strong>26 de octubre de 2026</strong> como fecha del Acto Eleccionario, a llevarse
-              a cabo con el fin de elegir a los representantes de Padres o Tutores y del Estamento de Alumnos ante el
-              Consejo Asesor del Instituto de Educación Media “Dr. Arturo Oñativia”, de acuerdo al cronograma
-              electoral detallado en esta página.
-            </p>
-            <p>ARTÍCULO 2º.- Dar la más amplia difusión a la presente.</p>
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <!-- PREGUNTAS -->
-    <section id="preguntas" class="section section-alt">
-      <div class="wrap narrow">
-        <header class="section-head">
-          <h2>Preguntas frecuentes</h2>
-        </header>
-        <div class="faq">
-          <details>
-            <summary>¿Es obligatorio votar?</summary>
-            <p>Sí. El voto es secreto y obligatorio para todas las personas empadronadas (Art. 22, Res. CS Nº 500/11).</p>
-          </details>
-          <details>
-            <summary>Estoy en 3º año, ¿puedo ser candidato?</summary>
-            <p>Podés votar, pero no ser candidato. Sólo pueden postularse los alumnos de 4º, 5º y 6º año (Art. 14).</p>
-          </details>
-          <details>
-            <summary>Como madre, padre o tutor, ¿tengo que inscribirme para votar?</summary>
-            <p>No. El padre, la madre o el tutor de cada alumno —uno por alumno— integra el padrón sin necesidad de inscribirse (Art. 15).</p>
-          </details>
-          <details>
-            <summary>¿Cuánto dura el mandato de quienes resulten electos?</summary>
-            <p>Un año, tanto para Padres o Tutores como para Alumnos. Pueden ser reelectos por única vez (Art. 18).</p>
-          </details>
-          <details>
-            <summary>¿Cómo se define quién gana?</summary>
-            <p>La representación se adjudica a la lista que obtenga el mayor número de votos válidos (Art. 17).</p>
-          </details>
-          <details>
-            <summary>¿Qué pasa si quiero impugnar el acto eleccionario?</summary>
-            <p>Las impugnaciones se presentan ante la Junta Electoral hasta las 18:00 hs. del jueves 29 de octubre. La instancia superior en materia electoral es el Consejo Superior de la UNSa (Art. 24).</p>
           </details>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div class="footer-brand">
-        <img src="assets/img/logo-iem.png" alt="" width="34" height="44">
-        <div>
-          <p class="footer-title">Junta Electoral · I.E.M. </p>
-          <p>Instituto de Educación Media “Dr. Arturo Oñativia” · Universidad Nacional de Salta</p>
+      <!-- PREGUNTAS -->
+      <section id="preguntas" class="section section-alt">
+        <div class="wrap narrow">
+          <header class="section-head">
+            <h2>Preguntas frecuentes</h2>
+          </header>
+          <div class="faq">
+            <details>
+              <summary>¿Es obligatorio votar?</summary>
+              <p>
+                Sí. El voto es secreto y obligatorio para todas las personas
+                empadronadas (Art. 22, Res. CS Nº 500/11).
+              </p>
+            </details>
+            <details>
+              <summary>Estoy en 3º año, ¿puedo ser candidato?</summary>
+              <p>
+                Podés votar, pero no ser candidato. Sólo pueden postularse los
+                alumnos de 4º, 5º y 6º año (Art. 14).
+              </p>
+            </details>
+            <details>
+              <summary>
+                Como madre, padre o tutor, ¿tengo que inscribirme para votar?
+              </summary>
+              <p>
+                No. El padre, la madre o el tutor de cada alumno —uno por
+                alumno— integra el padrón sin necesidad de inscribirse (Art.
+                15).
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Cuánto dura el mandato de quienes resulten electos?
+              </summary>
+              <p>
+                Un año, tanto para Padres o Tutores como para Alumnos. Pueden
+                ser reelectos por única vez (Art. 18).
+              </p>
+            </details>
+            <details>
+              <summary>¿Cómo se define quién gana?</summary>
+              <p>
+                La representación se adjudica a la lista que obtenga el mayor
+                número de votos válidos (Art. 17).
+              </p>
+            </details>
+            <details>
+              <summary>
+                ¿Qué pasa si quiero impugnar el acto eleccionario?
+              </summary>
+              <p>
+                Las impugnaciones se presentan ante la Junta Electoral hasta las
+                18:00 hs. del jueves 29 de octubre. La instancia superior en
+                materia electoral es el Consejo Superior de la UNSa (Art. 24).
+              </p>
+            </details>
+          </div>
         </div>
-      </div>
-      <p class="footer-note">
-        Portal informativo administrado por la Junta Electoral del I.E.M.
-        Ante cualquier diferencia, prevalecen las resoluciones oficiales.
-      </p>
-    </div>
-    <div class="wrap">
-		<p class="t-center" >  <strong> © Junta Electoral del I.E.M. - Octubre 2026 </strong>  </p>
-    </div>
-  </footer>
+      </section>
+    </main>
 
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/padrones.js" defer></script>
-</body>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/logo-iem.png" alt="" width="34" height="44" />
+          <div>
+            <p class="footer-title">Junta Electoral · I.E.M.</p>
+            <p>
+              Instituto de Educación Media “Dr. Arturo Oñativia” · Universidad
+              Nacional de Salta
+            </p>
+          </div>
+        </div>
+        <p class="footer-note">
+          Portal informativo administrado por la Junta Electoral del I.E.M. Ante
+          cualquier diferencia, prevalecen las resoluciones oficiales.
+        </p>
+      </div>
+      <div class="wrap">
+        <p class="t-center">
+          <strong> © Junta Electoral del I.E.M. - Octubre 2026 </strong>
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/padrones.js" defer></script>
+  </body>
 </html>

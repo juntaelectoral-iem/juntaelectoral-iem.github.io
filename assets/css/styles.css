@@ -387,6 +387,94 @@ p + p { margin-top: .85em; }
 @media (max-width: 960px) { .steps { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
 
+.section-anchor {
+  display: block;
+  position: relative;
+  top: -84px;
+  visibility: hidden;
+  height: 0;
+}
+
+.step-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--brand);
+  text-decoration: none;
+}
+.step-download-link:hover {
+  color: var(--brand-strong);
+  text-decoration: underline;
+}
+
+.listas-download {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--paper-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+.listas-download-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.listas-download-icon {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background: var(--brand-tint);
+  color: var(--brand);
+  display: grid;
+  place-items: center;
+}
+.listas-download-text h3 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+.listas-download-text p {
+  color: var(--ink-soft);
+  font-size: .95rem;
+  margin: 0;
+  max-width: 62ch;
+}
+.listas-download-action {
+  flex: none;
+}
+.listas-download-action .btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 860px) {
+  .listas-download {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 18px;
+  }
+  .listas-download-action {
+    width: 100%;
+  }
+  .listas-download-action .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .listas-download-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
+
 /* ---------- Junta ---------- */
 
 #junta .section-head { margin-bottom: 0; }
@@ -453,7 +541,8 @@ a.doc:hover { border-color: var(--brand); color: var(--ink); box-shadow: var(--s
   .ribbon, .site-header, .hero-actions, .nav-toggle, .skip { display: none !important; }
   body { background: #fff; font-size: 11pt; }
   .section, .hero { padding: 24px 0; background: none; border: 0; }
-  .hero-card, .card, .council, .steps li, .doc, .padron { box-shadow: none; }
+  .hero-card, .card, .council, .steps li, .doc, .padron, .listas-download { box-shadow: none; }
+  .listas-download-action { display: none; }
   .timeline li.is-current::after { box-shadow: none; }
   .site-footer { background: none; color: #000; border: 0; }
   .site-footer .footer-title, .footer-note { color: #000; }

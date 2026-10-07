@@ -1,0 +1,7 @@
+# Padrones originales: traen nombre y DNI de alumnos menores de edad. No se publican nunca.
+# El sitio usa assets/data/padrones.js, que se genera con herramientas/generar-padrones.mjs.
+PADRON*.pdf
+
+# Archivos temporales y de bloqueo de ofimática
+.~lock.*#
+~$*
