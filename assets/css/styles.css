@@ -535,6 +535,33 @@ a.doc:hover { border-color: var(--brand); color: var(--ink); box-shadow: var(--s
 .footer-brand p + p { margin-top: 2px; }
 .footer-note { max-width: 46ch; color: var(--ink-mute); }
 
+/* ---------- Toast de Notificaciones / Rate Limit ---------- */
+
+.download-limiter-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--ink);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: .92rem;
+  font-weight: 500;
+  box-shadow: 0 4px 18px rgb(0 0 0 / .22);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+  max-width: min(92vw, 480px);
+  text-align: center;
+}
+.download-limiter-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
 /* ---------- Print ---------- */
 
 @media print {

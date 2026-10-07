@@ -108,4 +108,68 @@
       countdown.hidden = false;
     }
   }
+
+  // ----- Control de tasa de descargas (prevención de spam) -----
+  (function initDownloadLimiter() {
+    var MAX_DOWNLOADS = 3;
+    var WINDOW_MS = 60 * 1000; // 1 minuto
+    var STORAGE_KEY = "je_download_timestamps";
+
+    function getHistory() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return [];
+        var list = JSON.parse(raw);
+        var curTime = Date.now();
+        return list.filter(function (t) { return curTime - t < WINDOW_MS; });
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveHistory(list) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      } catch (e) {}
+    }
+
+    var toastEl = null;
+    var toastTimeout = null;
+
+    function showNotice(msg) {
+      if (!toastEl) {
+        toastEl = document.createElement("div");
+        toastEl.className = "download-limiter-toast";
+        toastEl.setAttribute("role", "alert");
+        toastEl.setAttribute("aria-live", "assertive");
+        document.body.appendChild(toastEl);
+      }
+      toastEl.textContent = msg;
+      toastEl.classList.add("visible");
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(function () {
+        toastEl.classList.remove("visible");
+      }, 4000);
+    }
+
+    var downloadLinks = Array.prototype.slice.call(document.querySelectorAll("a[download]"));
+    downloadLinks.forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        var history = getHistory();
+        var curTime = Date.now();
+
+        if (history.length >= MAX_DOWNLOADS) {
+          e.preventDefault();
+          var oldest = history[0];
+          var waitSec = Math.max(1, Math.ceil((WINDOW_MS - (curTime - oldest)) / 1000));
+          showNotice("Límite de descargas alcanzado. Por favor aguardá " + waitSec + " segundos antes de volver a descargar.");
+          return;
+        }
+
+        history.push(curTime);
+        saveHistory(history);
+      });
+    });
+  })();
 })();
+
